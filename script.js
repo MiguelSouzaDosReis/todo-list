@@ -8,11 +8,20 @@ function Botao() {
         let li = document.createElement('li')
         ol.appendChild(li)
         li.innerText = input.value
+        li.classList.add('cor');
                
     }
        input.value = ""
-
     })
 }
+ 
+ //eu vi esse video para fazer essa função https://www.youtube.com/watch?v=tr1yzveiArs
+/*      function Input() {
+        intput.addEventListener('dblclick', function () {
+            input.value.classList.add('completed ')
+        })
+    } 
 
+Input() */ 
 Botao()
+
