@@ -17,30 +17,27 @@ function createAddTaskEvent() {
                 selected.classList.remove('selected')
                 event.target.classList.add('selected')
             } 
-            
-            
-            /* selected.classList.remove('selected') */
-            
-
         })
-
-
             input.value = ""
+            li.addEventListener('dblclick', function (event) {
+                
+                if(event.target.classList.contains('completed')!==true){
+                    li.classList.add('completed')
+                   
+                } 
+                else{
+                    event.target.classList.remove('completed')
+                    
+                }
+                    
+                
+            }) 
+                
+            
     })
 }
 
-// requisito 9 que tentei mas não consegui
-//eu vi esse video para fazer essa função https://www.youtube.com/watch?v=tr1yzveiArs
-/*      function Input() {
-        intput.addEventListener('dblclick', function () {
-            input.value.classList.add('completed ')
-        })
-    } 
-
-Input() */
-
-
-
-
+ 
+      
 createAddTaskEvent()
-
+ 
