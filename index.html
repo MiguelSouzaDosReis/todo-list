@@ -5,25 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Lista de Tarefa</title>
 </head>
 <body>
-    <header>Minha Lista de Tarefas</header>
-    <p id="funcionamento">Clique duas vezes em um item para marcá-lo como completo</p>
-    <input id="texto-tarefa" type="text">
+    <h2 class="">Minha Lista de Tarefas</h2>
+    <p class="p" id="funcionamento">Clique duas vezes em um item para marcá-lo como completo, e para apaga-lo clique no item e aperta o x em vermelho, se quiser mover o item para baixo ou para cima, clique no item e seleciona as cetas</p>
+    <input class="input-text" id="texto-tarefa" type="text">
+    <button class="add" id="criar-tarefa"></button>
     <ol id="lista-tarefas"></ol>
-    <button id="criar-tarefa">Criar a Lista de Tarefas</button>
-
-
-
-
-
-
-
-
-
-
-
+    <button class="arrow up" id="mover-cima"></button>
+    <button class="arrow down" id="mover-baixo"></button>
+    <button class="remove" id="remover-selecionado"> </button>
+    <button class="removeCheck" id="remover-finalizados">Remover os Tarefas Finalizados</button>
+    <button class="trash" id="apaga-tudo">Limpar tudo</button>
 
     <script src="script.js"></script>
 </body>

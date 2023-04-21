@@ -1,8 +1,88 @@
-.selected { 
-  background-color: rgb(128, 128, 128);
+body{
+  background-image: url(./img/background.jpg);
+  background-size: 180%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.completed { 
-  text-decoration: line-through solid rgb( 0 , 0 , 0);
-} 
+h2 {
+  text-align: center;
+}
 
+p {
+  text-align: center;
+  font-style: italic;
+}
+
+.selected {
+  background-color: rgba(128, 128, 128, 0.289);
+}
+
+.completed {
+  text-decoration: line-through solid rgb( 0 , 0 , 0);
+}
+
+.input-text {
+  padding: 0.3%;
+  font-size: 100%;
+  width: 70%;
+  position: relative;
+  left: 10%;
+}
+
+
+.add{
+  background-image: url(img/add.png);
+  background-size: 120%;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0.9%;
+  border-radius: 200%;
+  position: relative;
+  left: 11%;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 6px 6px 0;
+  display: inline-block;
+  padding: 0.4%;
+  margin: 0.3%;
+  background-color: orange;
+  position: relative;
+  left: 10%;
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.remove{
+  background-image: url(img/x.jpg);
+  background-size: 120%;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0.9%;
+  border-radius: 200%;
+  position: relative;
+  left: 10%;
+  margin: 2px;
+}
+
+.removeCheck{
+  border-radius: 2%;
+  position: relative;
+  left: 10%;
+}
+
+.trash{
+    border-radius: 2%;
+    position: relative;
+    left: 10%;
+}
