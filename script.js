@@ -84,3 +84,22 @@ btnMoverBaixo.addEventListener('click', moverItemBaixo);
 
 
 createAddTaskEvent();
+
+
+function salvarTarefas() {
+  const lista = document.getElementById("lista-tarefas").innerHTML;
+  localStorage.setItem("listaDeTarefas", lista);
+}
+
+function carregarTarefasSalvas() {
+  const listaSalva = localStorage.getItem("listaDeTarefas");
+  if (listaSalva) {
+    const lista = document.getElementById("lista-tarefas");
+    lista.innerHTML = listaSalva;
+  }
+}
+
+carregarTarefasSalvas();
+
+const botaoSalvar = document.getElementById("salvar-tarefas");
+botaoSalvar.addEventListener("click", salvarTarefas);

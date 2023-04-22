@@ -86,3 +86,17 @@ p {
     position: relative;
     left: 10%;
 }
+
+.save{
+  border-radius: 2%;
+  position: relative;
+  left: 10%;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:active {
+  background-color: gray;
+}
