@@ -1,8 +1,7 @@
 body{
   background-image: url(./img/background.jpg);
-  background-size: 180%;
   background-repeat: no-repeat;
-  background-position: center;
+  background-size: 100vw 100vh;
 }
 
 h2 {
